@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Articles</title>
+    <title>Contact Us</title>
+    <link rel="icon" href="/assets/images/link.png" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="/assets/images/link.png" />
-    <link rel="stylesheet" href="/css/main-article.css" />
   </head>
   <body>
     <header>
@@ -67,34 +67,78 @@
       </nav>
     </header>
     <main>
-      <section id="articles">
-        <div class="article-wrapper">
-          <div class="article">
-            <article class="article-container">
-              <p class="date">📅 Published on February 25, 2025</p>
-              <h4 class="article-title">
-                How to Earn Money on TikTok in 2025 🤑
-              </h4>
-              <div class="article-content">
-                <p>
-                  TikTok has grown into a profitable platform for creators,
-                  offering multiple ways to earn money in 2025. Whether you're a
-                  beginner or an experienced TikToker, this guide covers the
-                  best strategies to monetize your content and build a
-                  sustainable income.
-                </p>
-              </div>
-              <div class="article-footer">
-                <a href="/articles/article-1.html" target="_blank"
-                  >Read More...</a
-                >
-              </div>
-            </article>
+      <section id="social-media">
+        <div class="social-media-container">
+          <div class="social-media-item">
+            <a
+              href="https://youtube.com/@hasindutechschool"
+              target="_blank"
+              class="social-media-btn"
+            >
+              <img src="/assets/images/youtube.png" alt="youtube" />
+              <p class="social-media-text">Subscribe</p>
+            </a>
+          </div>
+          <div class="social-media-item">
+            <a
+              href="https://t.me/hasindutechschooltelegram"
+              target="_blank"
+              class="social-media-btn"
+            >
+              <img src="/assets/images/telegram.png" alt="telegram" />
+              <p class="social-media-text">Follow</p>
+            </a>
           </div>
         </div>
-        <br />
       </section>
 
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="/submit-contact" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div
+              id="formMessage"
+              style="display: none; margin-top: 20px"
+              class="alert alert-success"
+            >
+              Thank you for contacting us! We will get back to you soon.
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="footer">
         <footer>
           <div class="column-1">
@@ -108,10 +152,19 @@
           <p>&copy; 2025 Link.Me. All rights reserved.</p>
         </footer>
       </section>
-
+      <!-- Add Bootstrap JS and dependencies -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("formMessage").style.display = "block";
+            this.reset();
+          });
+      </script>
     </main>
   </body>
 </html>
