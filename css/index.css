@@ -74,6 +74,15 @@ p.link-title {
   padding: 0;
   margin: 0;
 }
+.head-title {
+  text-align: center;
+  margin-top: 20px;
+  /* font-size: 15px; */
+  color: #333;
+}
+.head-title h1 {
+  font-size: 25px;
+}
 footer {
   background-color: #f0f0f0;
   padding: 20px;
