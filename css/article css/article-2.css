@@ -13,7 +13,7 @@
   font-weight: bold;
 }
 .content {
-  padding: 40px 20px;
+  padding: 0px 20px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -59,4 +59,41 @@ footer p {
   margin: 10px 0 0;
   color: #6c757d;
   font-size: 0.9rem;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+.app-download {
+  text-align: center;
+  margin: 40px 0;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  border-radius: 12px;
+}
+.app-download .download-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.app-download button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.app-download button:hover {
+  background-color: #0056b3;
+}
+.download-box {
+  /* display: flex;
+    justify-content: space-around; */
+  padding: 20px;
 }
