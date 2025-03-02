@@ -1,11 +1,24 @@
 body {
   font-family: "Noto Sans Sinhala", sans-serif;
 }
-.article-header {
+/* .article-header {
   background-color: #007bff;
   color: white;
-  /* padding: 60px 0; */
   text-align: center;
+} */
+.topic {
+  padding: 20px;
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+}
+.topic h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.topic p {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 .article-content {
   padding: 0px 20px;
