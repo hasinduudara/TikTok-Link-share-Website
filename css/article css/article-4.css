@@ -1,0 +1,83 @@
+body {
+  font-family: "Noto Sans Sinhala", sans-serif;
+}
+.article-header {
+  background-color: #007bff;
+  color: white;
+  /* padding: 60px 0; */
+  text-align: center;
+}
+.article-content {
+  padding: 0px 20px;
+}
+.article-content h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+.article-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Center images horizontally */
+}
+.app-download {
+  text-align: center;
+  margin: 40px 0;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  border-radius: 12px;
+}
+.app-download .download-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.app-download button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.app-download button:hover {
+  background-color: #0056b3;
+}
+.download-box {
+  /* display: flex;
+    justify-content: space-around; */
+  padding: 20px;
+}
+footer {
+  background: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .column-1,
+footer .column-2 {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+footer .column-1 a,
+footer .column-2 a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+footer .column-1 a:hover,
+footer .column-2 a:hover {
+  color: #ff7e5f;
+}
+footer p {
+  margin: 10px 0 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}

@@ -1,3 +1,6 @@
+body {
+  font-family: "Noto Sans Sinhala", sans-serif;
+}
 .nav-link-custom {
   color: black !important;
 }
@@ -73,6 +76,7 @@ p.link-title {
   color: #000;
   padding: 0;
   margin: 0;
+  font-family: "Noto Sans Sinhala", sans-serif;
 }
 .head-title {
   text-align: center;
